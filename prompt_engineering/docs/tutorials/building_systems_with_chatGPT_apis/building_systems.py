@@ -11,8 +11,7 @@ def get_completion(prompt, model="gpt-3.5-turbo"):
     messages = [{"role": "user", "content": prompt}]
     response = client.chat.completions.create(
         model=model,
-        messages=messages,
-        temperature=0
+        messages=messages
     )
     return response.choices[0].message.content
 
@@ -30,5 +29,5 @@ if __name__ == "__main__":
     # response = get_completion("What is the capital of France?")
     # print(response)
 
-    response = get_completion("What is the capital of India?")
+    response = get_completion("What is the capital of India?",model="o3-mini-2025-01-31")
     print(response)
