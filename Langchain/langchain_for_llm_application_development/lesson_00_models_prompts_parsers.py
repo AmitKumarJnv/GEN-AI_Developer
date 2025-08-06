@@ -9,7 +9,7 @@ def main():
     """
     response = get_completion("What is the capital of Srilanka?")
     if response:
-        print(response)
+        return response
 
 def without_prompt_template()->str:
     """
@@ -69,5 +69,5 @@ def langchain_prompt_template()->str:
     return get_completion(data.text)
 
 if __name__ == "__main__":
-    print(langchain_prompt_template())
+    print(main())
     
