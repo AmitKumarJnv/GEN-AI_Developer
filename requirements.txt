@@ -17,3 +17,4 @@ typing_extensions==4.12.1
 python-dotenv
 lamini
 transformers
+google-genai==1.38.0
